@@ -1,0 +1,491 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{authblk}
+\usepackage{amsmath,amssymb,graphicx,booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{orcidlink}
+\newcommand{\ms}{\overline{\mathrm{MS}}}
+\begin{document}
+
+\title{The inverse branch of the compact family cycle:\\ down-type quark masses from waveform-carried partners}
+
+\author{Andrew M. Brilliant\,\orcidlink{0009-0004-8024-5442}}
+\affil{Applied Dynamics Research, Sapporo, Japan; ab@ad-research.org}
+
+
+\date{\today}
+
+\maketitle
+
+\begin{abstract}
+When light fermion masses arise from integrating out heavy partners, the light
+spectrum is an inverted image of the partner spectrum: the seesaw determinant
+fixes every light--partner product. We apply this inversion to a recently
+proposed compact-cycle construction~\cite{Shulga2026} in which charged-lepton
+masses are squared overlaps $m_a \propto |Z(2\pi a/3)|^2$ of a self-dual
+amplitude $Z(\varphi)=s[1+\sqrt{2}\cos(\varphi+\delta)]$, and find that the
+inverse branch $m_a \propto M^2/|Z(2\pi a/3)|^2$ reproduces, with no further
+input, the empirical sum rule recently reported for the down-type
+quarks~\cite{Rivero2026}: the two sectors' mass relations are the two coordinate readings of one cone condition, realized as two coupling branches of one construction. The seesaw realization connects the inverse branch to the empirical light-quark mass cascade $m_s = \alpha^2\mu_\star$, $m_d = \alpha^4\mu_\star$ established in companion letters: the geometric-mean structure is the cone condition's consequence, read through the seesaw, not an independent assumption. We introduce a coordinate diagnosis using
+the exact circulant fit of the Brannen--\.{Z}enczykowski parametrization: the
+self-dual condition $k=1$ holds for the charged leptons in the direct coordinate
+($k=1.00000\pm0.00001$, pole masses) and for the down triple in the inverse coordinate
+($k = 1.001 \pm 0.002$ at a common 2\,GeV scale), while failing in the crossed
+coordinates ($k_D^{\rm dir}=1.115$, updating \.{Z}enczykowski's published $k_D\simeq1.08$) and failing in both coordinates for the up triple
+($k_U^{\rm dir}=1.239$ vs.\ his $1.25$; $k_U^{\rm inv}=1.324$). Self-duality thus
+selects the coordinate empirically; which branch a sector takes is the datum a
+mechanism must explain. A concrete realization exists: heavy vectorlike
+down-partners whose masses carry the waveform directly, with a family-universal
+Dirac coupling, yield the inverse branch upon being integrated out (the seesaw's determinant identity is the fixed-product structure) and predict a partner triple with mass ratios $1:\alpha^2:2\alpha^5$ ($\alpha \equiv \sqrt{3/2}-1 \simeq 0.2247$), itself locked on the direct cone; the most economical version (Dirac mass at the involution
+pivot) is already excluded by direct searches. With self-duality imposed exactly, the inverse rule fixes the scale-invariant ratio $m_s/m_d = 19.7$ from $m_b$ alone (the absolute mass $m_s = 92.7\pm1.6$\,MeV requires $m_d$ as a second input, and the uncertainty is $m_d$-dominated), presently $-1.3\sigma$ from the lattice determination $20.1\pm0.3$; equivalently $m_s(2\,\mathrm{GeV}) = 92.7\pm1.6$\,MeV, with the uncertainty propagated from the inputs and dominated by $m_d$. Successive lattice cycles sharpen the ratio into a decisive test. A coincidence-budget analysis is reported in Sec.~\ref{sec:budget}. We state what is not derived: the origin of the waveform-carried
+partner masses and the down-sector phase remain open, and we engage the
+geometric-hierarchy prior art directly. No fit parameter is introduced into the mass relations of this paper.
+\end{abstract}
+
+
+\section{A coordinate ambiguity, and a construction that resolves it}
+
+Any three positive masses can be organised either through their square roots or
+through their inverse square roots; the two coordinates carry different physics
+when a structural condition holds in one and not the other. This paper shows
+that the light-fermion spectrum exhibits exactly this situation, that the two
+coordinates correspond to the two coupling branches of a single recent
+construction, and that a universal-seesaw realization connects them.
+
+The structural condition in question is a constraint the charged-lepton pole
+masses are observed to satisfy~\cite{Koide1982,Koide1983,PDG},
+\begin{equation}
+Q_\ell \equiv \frac{m_e+m_\mu+m_\tau}{\left(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}\right)^2}
+= \frac{2}{3},
+\label{eq:koide}
+\end{equation}
+for which Shulga~\cite{Shulga2026} has
+proposed a mechanism: a single real amplitude on a compact internal cycle, built
+from the two lowest antiperiodic modes $e^{\pm i\varphi/2}$, whose symmetric square
+spans the three periodic harmonics $\{e^{i\varphi},1,e^{-i\varphi}\}$ identified
+with the three families. A coherence (self-duality) condition fixes the amplitude to
+\begin{equation}
+Z(\varphi) = s\left[1+\sqrt{2}\cos(\varphi+\delta)\right],
+\label{eq:Z}
+\end{equation}
+and the masses are quadratic overlaps at the three family phases,
+$m_a \propto |Z(2\pi a/3)|^2$. Orthogonality of equally spaced samples gives
+$\sum_a z_a = 3s$ and $\sum_a z_a^2 = 6s^2$ for \emph{any} $\delta$, hence
+Eq.~(\ref{eq:koide}) exactly. A Berry dressing selects $\delta_\ell = -2/9$ and
+predicts $m_\tau = 1776.97$\,MeV; the construction is explicitly restricted to
+the charged leptons. Equation~(\ref{eq:koide}) holds on the measured pole
+masses to one part in $10^5$, and, because the mass anomalous dimension is
+flavour-blind, is built from renormalisation-group-invariant ratios~\cite{LiMa}.
+
+Separately, Rivero~\cite{Rivero2026} has reported that the down-type quarks satisfy
+the same constant in the \emph{inverse} coordinate,
+\begin{equation}
+Q_d^{\,\rm inv} \equiv
+\frac{m_d^{-1}+m_s^{-1}+m_b^{-1}}{\left(m_d^{-1/2}+m_s^{-1/2}+m_b^{-1/2}\right)^2}
+= \frac{2}{3},
+\label{eq:rivero}
+\end{equation}
+holding within $1\sigma$ across the perturbative range, with the deviation from
+$2/3$ crossing zero in the $10$--$300$\,TeV region depending on running inputs.
+The same ratio invariance renders the relation observationally near
+scale-free.
+
+This paper makes one structural observation, one empirical observation, and one
+honest accounting of what remains underived.
+
+\section{One condition, two coordinates}
+
+The algebraic content is a single lemma (the proof is division of the two sum
+rules already stated, $\sum_a z_a = 3c_0$ and $\sum_a z_a^2 = c_0^2(3+3A'^2/2)$;
+the identities are machine-checkable from the sum rules alone). Let three quantities be sampled from one cosine
+at $120^\circ$ spacing, $z_a = c_0[1+A'\cos(\varphi_a+\delta)]$,
+$\varphi_a = 2\pi a/3$. Then
+\begin{equation}
+\frac{\sum_a z_a^2}{\left(\sum_a z_a\right)^2} = \frac{1}{3}+\frac{A'^2}{6},
+\end{equation}
+which equals $2/3$ if and only if $A' = \sqrt{2}$, the self-dual point of Eq.~(\ref{eq:Z}). The rational value is therefore not a tuned target: it is the participation ratio forced by the orthogonality of three equally spaced samples at the self-dual amplitude, for any phase. The derivation never asks what $z$ is. Setting $z_a = \sqrt{m_a}$
+yields Eq.~(\ref{eq:koide}); setting $z_a = 1/\sqrt{m_a}$ yields
+Eq.~(\ref{eq:rivero}). The two relations are one cone condition read in two coordinates (geometrically, the condition places the coordinate vector at $45^\circ$ to the democratic direction~\cite{Foot}). The algebra permits both coordinates and selects neither; the
+selection is physics, and it is the subject of Sec.~\ref{sec:open}.
+
+\section{The transfer: an inverse coupling branch}
+\label{sec:transfer}
+
+Retain Shulga's construction in full (cycle, antiperiodic doublet, symmetric square, self-dual coherence) and change only the coupling of the down sector to
+the family amplitude:
+\begin{equation}
+m_a^{(\ell)} \propto |Z_\ell(2\pi a/3)|^2,
+\qquad
+m_a^{(d)} \propto \frac{M_d^2}{|Z_d(2\pi a/3)|^2}.
+\label{eq:branches}
+\end{equation}
+Then $1/\sqrt{m_a^{(d)}} \propto Z_d(2\pi a/3)$, and the same two sum rules give
+Eq.~(\ref{eq:rivero}) exactly, for any down-sector phase $\delta_D$. This is the single new postulate of the paper, and it is flagged as such: the inverse branch is \emph{assumed} here, with a concrete realization, in which the assumption migrates from the coupling to the particle content, given in Sec.~\ref{sec:open}. Everything downstream (the exactness of Eq.~(\ref{eq:rivero}), its phase independence, its scale behaviour) is
+inherited from the mechanism without modification (Fig.~\ref{fig:branches}).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{fig_branches}
+\caption{The two coupling branches of one waveform. (a) The self-dual amplitude
+$Z(\varphi)/s = 1+\sqrt{2}\cos(\varphi+\delta)$ at $\delta=2/9$, sampled at
+the three family phases $2\pi a/3$. (b) Direct branch: charged-lepton masses as
+squared overlaps, $m \propto |Z_a|^2$. (c) Inverse branch via the universal
+seesaw of Sec.~\ref{sec:open}: vectorlike partner masses carry the waveform, $M_a \propto |Z_a|^2$ (levels $D_d, D_s, D_b$), and integrating them out inverts the ladder,
+$m_a = m_D^2/M_a$: the heaviest partner yields the lightest quark. Both
+panels share the sum rules $\sum z_a = 3s$, $\sum z_a^2 = 6s^2$, hence the
+$2/3$ cone in the respective coordinate.}
+\label{fig:branches}
+\end{figure}
+
+
+\section{The empirical structure being mechanised}
+\label{sec:cascade}
+
+The inverse branch is not proposed in a vacuum. Two companion
+letters~\cite{APPB,MPLA} establish the empirical pattern this paper seeks to
+connect to Shulga's cycle; we state it here for self-containment.
+
+The Soddy completion of the lepton Descartes configuration~\cite{APPB} fixes
+a companion scale $F^2 = \alpha^2\mu_\star = 95.12$\,MeV, with $\alpha \equiv
+\sqrt{3/2}-1$ determined by the cone condition alone ($(1+\alpha)^{-2} = 2/3$).
+This scale coincides with $m^{\overline{\rm MS}}_s(\mu_\star)$ at $+0.9\sigma$
+(PDG 2026). Accepting this identification, the companion
+letter~\cite{MPLA} develops the cascade:
+\begin{align}
+m_s &= \alpha^2\,\mu_\star = 95.12\ \mathrm{MeV}, \label{eq:cascade_s}\\
+m_d &= \alpha^4\,\mu_\star = 4.804\ \mathrm{MeV}, \label{eq:cascade_d}\\
+m_u &= \alpha^2\sqrt{2m_e\,\mu_\star} = 2.216\ \mathrm{MeV}, \label{eq:cascade_u}
+\end{align}
+all at $\mu_\star$. Each rung steps by $\alpha^2$; the chain interpolates
+geometrically between the lepton-sum scale $\mu_\star$ and the pair-production
+threshold $2m_e$, closing the loop $\mu_\star \to m_s \to m_d \to m_u \to 2m_e
+\to e \to \mu_\star$. The ratio $m_d/m_s = \alpha^2 = 5/2-\sqrt{6}$ gives,
+via the leading Gatto--Sartori--Tonin relation~\cite{GST},
+$\sqrt{m_d/m_s} = \alpha = 0.22474$, within $0.4\sigma$ of
+$|V_{us}|$~\cite{MPLA}.
+
+The geometric-mean structure $m_s^2 = \mu_\star\cdot m_d$ (equivalently,
+$m_s$ is the mean proportional of $\mu_\star$ and $m_d$) was noted empirically
+by Ng~\cite{Ng} in the form $m_s^2 \approx m_d\cdot m_b$, with the heavy-quark
+boundary replaced here by the lepton-sum scale.
+
+The light-sector cascade has a heavy-sector counterpart. Define
+$G \equiv \sqrt{3/2}\,\mu_\star = 2306.3$\,MeV, a scale built from the cone
+condition and the lepton sum. Then
+\begin{equation}
+m_c \cdot m_b = G^2 = \tfrac{3}{2}\,\mu_\star^2,
+\label{eq:involution}
+\end{equation}
+holding to $0.17\%$ on $\overline{\rm MS}$ masses at their respective
+self-scales ($m_c(m_c) = 1272.9$\,MeV, $m_b(m_b) = 4183$\,MeV;
+product $5.325 \times 10^6$\,MeV$^2$ against $\tfrac{3}{2}\mu_\star^2 =
+5.316 \times 10^6$). The map $m \mapsto G^2/m$ exchanges charm and bottom,
+an involution whose fixed point is $G$ itself. This is a second
+lepton-anchored geometric-mean relation: the geometric mean of charm and
+bottom is $G$, determined by $\mu_\star$ alone. Combined with the light
+cascade, the construction links five of six quark masses to the single
+lepton-sector input $\mu_\star$ through geometric means at both ends of the
+spectrum (the top quark, which decays before hadronising and whose pole mass
+is perturbatively well-defined, is not addressed here). Neither the
+involution nor the light cascade is scored in the coincidence budget of
+Sec.~\ref{sec:budget}, which prices only the two-cone self-duality; the
+full geometric-mean structure is correspondingly rarer than the quoted
+frequency, a point we record without exploiting.
+
+\emph{The question this paper answers:} why should the spectrum step by
+$\alpha^2$? Under the seesaw realization of Sec.~\ref{sec:open}, the
+light down mass at family phase $\varphi_a$ is $m_a = m_D^2/M_a$ with
+$M_a \propto |Z(2\pi a/3)|^2$. The product of any two light masses is
+$m_i m_j = m_D^4/(M_i M_j)$, and since the $M_a$ carry the direct waveform,
+their ratios are fixed by the cone condition: $M_i/M_j = |Z_i|^2/|Z_j|^2$.
+Self-duality ($k=1$) then forces the mass ratios to be functions of $\alpha$
+alone, because $\alpha$ \emph{is} the cone condition in scalar form. The
+cascade is not an additional assumption; it is the cone condition's
+consequence, read through the seesaw.
+
+\emph{Scale selection.} A running mass crosses every target inside its range
+(the intermediate-value theorem applied to a continuous, monotone function),
+so a match found by scanning establishes nothing: continuous scale variation
+is a coincidence generator, and it is not admitted here. The comparison
+scale $\mu_\star$ is not scanned; it is the lepton-sum scale, fixed by
+Eq.~(\ref{eq:koide}) and the measured lepton masses before any quark
+comparison is made~\cite{APPB}. The match is specific: shifting the
+comparison by $\pm5\%$ costs $1.6$--$1.8\sigma$, and by $\pm10\%$ costs
+$3.2$--$3.7\sigma$~\cite{APPB}. A cross-scheme audit (pole leptons versus
+$\overline{\rm MS}$ leptons, $\mu_\star$ versus $2$\,GeV) is reported in the
+companion preprint~\cite{C3Z2}: the residual exceeds $2\sigma$ at
+$2$\,GeV, confirming the cascade output is scale-locked rather than
+generically compatible.
+
+Two remarks. First, the postulate is economical: no new field, scale, or parameter
+is introduced; the branch is a discrete label. Second, it is not vacuous: the
+crossed assignments (leptons inverse, downs direct) are excluded by data at the
+$10\%$ level in the amplitude parameter, as quantified next.
+
+\section{Coordinate diagnosis: self-duality selects the branch}
+\label{sec:diagnosis}
+
+Any three positive masses admit the exact circulant parametrization of
+Koide, Brannen and \.{Z}enczykowski~\cite{Brannen,Zen2012,Zen2013},
+\begin{equation}
+v_j = A\left[1+\sqrt{2}\,k\cos\!\left(\tfrac{2\pi j}{3}+\delta\right)\right],
+\qquad j = 0,1,2,
+\label{eq:circulant}
+\end{equation}
+with $v_j = \sqrt{m_j}$ (direct coordinate) or $v_j = 1/\sqrt{m_j}$ (inverse
+coordinate). Three data determine $(A,k,\delta)$ exactly by discrete Fourier
+inversion; no fitting is involved. The participation ratio in either coordinate is $Q = (1+k^2)/3$, so the self-dual point $k=1$ is precisely $Q = 2/3$.
+
+Table~\ref{tab:k} gives the exact-fit $(k,\delta)$ for each sector in each
+coordinate. Lepton inputs are pole masses (scheme-independent).
+\emph{Down triple:} all three masses at a common $\overline{\rm MS}$ scale
+$\mu = 2$\,GeV: $m_d = 4.70\pm0.07$, $m_s = 93.4\pm0.68$\,MeV (FLAG 2024,
+$N_f{=}2{+}1{+}1$~\cite{FLAG}), $m_b(2\,\mathrm{GeV}) = 4966$\,MeV from
+four-loop running of $m_b(m_b) = 4183$\,MeV~\cite{CRunDec}; no mixed scales.
+\emph{Up triple:} $m_u = 2.16$\,MeV at $2$\,GeV, with $m_c(m_c)$ and $m_t(m_t)$
+at their own scales, following the mixed-scale convention
+of~\cite{Zen2012} for comparability with his published $k$ values. The
+common-scale cross-check is given in Sec.~\ref{sec:diagnosis}(ii).
+
+\begin{table}[t]
+\caption{Exact circulant parameters by sector and coordinate. The self-dual condition $k=1$ holds in exactly one coordinate per cone-satisfying sector and in neither coordinate for the up triple. Uncertainties on the down-triple inverse row
+are input-propagated ($m_d$ dominant for $\delta$, $m_s$ for $k$).}
+\label{tab:k}
+
+\begin{tabular}{llll}\toprule
+sector & coordinate & $k$ & $\delta$ (rad) \\
+\midrule
+$e,\mu,\tau$ & direct  & $1.00000(1)$ & $+0.22222$ ($\simeq 2/9$) \\
+$d,s,b$      & direct  & $1.115$   & $+0.1002$ \\
+$d,s,b$      & inverse & $1.001\pm0.002$ & $-0.1898\pm0.0019$ \\
+$u,c,t$      & direct  & $1.239$   & $+0.0769$ \\
+$u,c,t$      & inverse & $1.324$   & $-0.0333$ \\
+\bottomrule\end{tabular}
+
+\end{table}
+
+Three features of Table~\ref{tab:k} carry the paper's empirical content.
+
+\emph{(i) The self-dual condition diagnoses the branch.} The charged leptons sit at
+$k=1$ to five decimal places in the direct coordinate. The down triple sits at
+$k = 1.001\pm0.002$ in the inverse coordinate (Rivero's relation restated)
+while deviating by $11\%$ in the direct coordinate. \.{Z}enczykowski, working in
+the direct coordinate only, reported $k_D \simeq 1.08$ and $k_U \simeq 1.25$ at
+$2$\,GeV and read these as the failure of Koide's parametrization for
+quarks~\cite{Zen2012}; our exact fit reproduces his values with current masses
+($1.115$, $1.239$). The resolution proposed here is that the parametrization does
+not fail for the down sector: it is being read in the wrong coordinate. Where
+$k=1$ lives is an empirical fact, and it is the fact the mechanism's branch
+structure, Eq.~(\ref{eq:branches}), encodes. The statement is stable across
+input vintages: FLAG 2024, PDG 2024, and PDG 2026 central values give
+$k^{\rm inv}_{dsb}$ in $[1.000, 1.002]$, and varying $m_d$ by $\pm1\sigma$
+spans $[0.999, 1.003]$, consistent with the quoted input-propagated uncertainty. (All uncertainties on $(k, \delta)$ are linear error propagation through the discrete Fourier inversion formulas of Eq.~(\ref{eq:circulant}), with $m_d$ as the dominant source; the inversion is analytic and the propagation is one-step. Correlations among lattice determinations of $m_d$, $m_s$, and $m_b$ are not propagated; their inclusion would slightly broaden the quoted intervals but is unlikely to shift the central values or the branch-selection conclusion.)
+
+\emph{(ii) The up triple satisfies neither coordinate.} $k$ deviates from unity by
+$24\%$ (direct) and $32\%$ (inverse), equivalently $Q = 0.845$ and $0.917$,
+consistent with Kartavtsev's published $K_u \sim 0.85$~\cite{Kartavtsev}. Within
+the present framework this is not an embarrassment but, speculatively, a signature: a sector occupying a different representation of the family structure (Rivero's supersymmetric construction requires down-type triplets but up-type \emph{sextets}~\cite{Rivero2024}) need not sample the waveform as a
+triplet does, and no cone form in either coordinate should hold. A
+representation-theoretic computation of the up-sector participation ratio,
+confronting the measured $0.845$/$0.917$, would be a decisive test; none exists. (Table~\ref{tab:k} follows the mixed-scale convention of~\cite{Zen2012} for comparability; at a true common scale, $\mu = 2$\,GeV under four-loop running, the triple reads $k^{\rm dir} \simeq 1.29$ and $k^{\rm inv} \simeq 1.32$, so the neither-coordinate conclusion is convention-independent.)
+
+\emph{(iii) A sharp forward test.} Imposing self-duality exactly in the inverse
+coordinate, Eq.~(\ref{eq:rivero}) determines any one down mass from the other two.
+The binding constraint is on the strange quark:
+\begin{equation}
+m_s(2\,\mathrm{GeV})\big|_{\rm pred} = 92.7\ \mathrm{MeV},
+\end{equation}
+from $m_b$ input (the ratio $m_s/m_d$ is fixed by self-duality and $m_b$ alone; $m_d$ enters only when converting the ratio to an absolute mass). Propagating the input uncertainties into the absolute prediction gives a theory-side error of $\pm1.6$\,MeV, dominated entirely by $m_d$
+($\partial m_s/\partial m_d \simeq 23$; the $m_b$ contribution is $0.03$\,MeV, propagated from $m_b(m_b) = 4.183\pm0.006$\,GeV through four-loop running via RunDec~\cite{CRunDec}), so the single-mass comparison is $m_d$-limited: $-0.4\sigma$
+combined against FLAG 2024 ($93.4\pm0.68$\,MeV~\cite{FLAG}) and $-0.1\sigma$
+against PDG 2026 ($92.9\pm0.7$\,MeV). The sharp form of the same constraint is
+dimensionless and renormalisation-group invariant: with $m_b$ input alone, self-duality fixes the ratio: the parametrisation Eq.~(\ref{eq:circulant}) at $k=1$ has two free parameters $(A, \delta)$; one measured mass pins both, determining the other two. Concretely,
+\begin{equation}
+\left.\frac{m_s}{m_d}\right|_{\rm pred} = 19.71,
+\label{eq:ratio}
+\end{equation}
+against the correlated lattice determination $m_s/m_d = 20.1\pm0.3$
+(FLAG 2024), presently $-1.3\sigma$. The present agreement is not independent confirmation: the self-duality condition was motivated by observing that the down sector sits near $k=1$, so the prediction and its test share the same sector's data. The falsifier is the \emph{future} lattice ratio, whose error has contracted by roughly $15\%$ per review cycle; at $\pm0.15$ the
+present central value would exclude the relation at $2.6\sigma$, and
+convergence to $19.7$ would be strong confirmation. The relation is falsifiable
+on a stated timescale. A structural limitation is noted: the self-duality
+constraint derives from charged-lepton pole masses (scheme-independent
+observables), while the down-sector comparison uses $\overline{\rm MS}$
+running masses (scheme- and scale-dependent parameters). This scheme mixing is
+inherent to any comparison involving confined quarks and is not an artefact of
+the construction; a cross-scheme audit in the companion
+preprint~\cite{C3Z2} confirms that the match is specific to $\mu_\star$
+(the residual exceeds $2\sigma$ at $2$\,GeV) and survives under QED-corrected
+lepton inputs.
+
+\emph{On the down-sector phase.} The exact fit gives
+$\delta_D^{\rm inv} = 1.905\pm0.002$ (representative value on $[0,2\pi/3)$).
+Fits with the amplitude frozen at the self-dual point suggested proximity to the tetrahedral angle $\arccos(-1/3)=1.9106$; in the convention-independent combination $\cos 3\delta$ the frozen-$k$ value reads $0.851$ against the tetrahedral $23/27 = 0.852$. The two estimators (frozen $k$ versus the exact fit) differ by $0.005$ in $\delta$, three times the input-propagated uncertainty, because releasing the amplitude lets phase and amplitude trade against each other within the present $m_d$ uncertainty; under the construction's own hypothesis ($k=1$ exact) the frozen-$k$ estimator applies, though using the hypothesis under test to select the estimator cannot count as independent support. The tetrahedral question is therefore undecided, not excluded, and is resolved by the same lattice program that sharpens $k$ (test 2 of Sec.~\ref{sec:tests}).
+\.{Z}enczykowski's proposed $\delta_D = 4/27$~\cite{Zen2012,Zen2013} refers to
+low-energy mass extractions ($m_s \sim 160$\,MeV); in $\ms$ at $2$\,GeV his own
+formula gives $0.100$, which our fit reproduces to four digits. In $\ms$
+conventions the direct phase is frozen at $0.100$ by ratio invariance, and no
+special value is claimed here for either coordinate.
+
+\section{What selects the branch: candidates, one exclusion, open problems}
+\label{sec:open}
+
+The branch label in Eq.~(\ref{eq:branches}) is the paper's single postulate.
+Candidate origins, ranked by published foundation:
+
+\emph{(a) Universal seesaw (strongest; a concrete realization).} The inverse
+branch is what a seesaw \emph{does}. Give the down sector heavy vectorlike
+partners $D_a$ whose masses couple directly to the family amplitude,
+$M_a \propto |Z(2\pi a/3)|^2$, with a family-universal Dirac coupling $m_D$;
+integrating the partners out gives
+\begin{equation}
+m_a^{(d)} \;=\; \frac{m_D^2}{M_a} \;\propto\; \frac{1}{|Z(2\pi a/3)|^2},
+\label{eq:seesaw}
+\end{equation}
+which \emph{is} Eq.~(\ref{eq:branches}), derived rather than postulated, at the
+cost of one standard assumption about particle content. This is the standard seesaw pattern: the Dirac coupling links each light state to its partner, and diagonalising each two-state system leaves the light eigenvalue suppressed by the heavy one~\cite{Berezhiani,DavidsonWali}. The determinant identity $\lambda_{\rm light}\lambda_{\rm heavy} = -m_D^2$ makes each light--partner pair
+a fixed-product (geometric-mean) pair, the same structure exact self-duality imposes within the light triple. Geometric-mean regularities among the observed quark masses have been noted empirically~\cite{Ng} and, anchored to the lepton scales, in the companion letter~\cite{MPLA}; they are consistent with this fixed-product structure. The cascade's own conditional rarity is assessed in~\cite{APPB}. Universal-seesaw mass generation for charged
+fermions is long established~\cite{Berezhiani,DavidsonWali}, and its
+\emph{geometric} three-family hierarchy was developed by Davidson, Schwartz and
+Wali~\cite{DSW} and Davidson, Schwartz and Volkas~\cite{DSV}, whose hybrid
+cross-sector products ($m_d m_t \approx m_c^2$, $m_u m_b \approx m_s^2$) are the
+nearest published ancestors of the present cross-pair structure; the addition here is that the partner masses carry the \emph{waveform}, so the light triple inherits exact inverse self-duality. With a family-universal Dirac coupling the down Yukawa is diagonal in the family basis, so the construction assigns all quark mixing to the up sector (the standard texture assumption of universal-seesaw models), connecting the present work to the CKM-side program of~\cite{Zen2012,Zen2013}. Numerically, $\alpha$ itself lies within $0.2\%$ of the Cabibbo parameter ($\sqrt{m_d/m_s} = 0.2243$ at the Table~\ref{tab:k} masses; $|V_{us}| = 0.22503(68)$), a coincidence of Gatto--Sartori--Tonin form~\cite{GST} developed in the companion letter~\cite{MPLA}. We record it without using it, and note the tension it inherits here: with a family-diagonal down sector, its origin cannot be the down-sector texture that classically produces the GST relation, and would have to arise on the up side or beyond the construction. The realization relocates rather than solves the phase question: the down phases reside in the partner spectrum through the waveform phase $\delta_D$, so open problem (B) below reads equally ``derive the partner-spectrum phase.'' Two consequences are immediate. First, the partner triple itself satisfies the \emph{direct} cone condition: inverting the
+measured down masses gives partner ratios $M_{D_d}:M_{D_s}:M_{D_b} = 1:\alpha^2:2\alpha^5$ (with $\alpha \equiv \sqrt{3/2}-1$: not an additional constant but the cone condition relocated, since $(1+\alpha)^{-2} = 2/3$; the companion letter~\cite{MPLA} develops the GST consequences of this variable) (the $b$-partner lightest, the hierarchy reversed; the $\alpha$-dressed forms hold in the companion's evaluation frames, the third ratio reading $9.5\times10^{-4}$ at the common 2\,GeV convention of Table~\ref{tab:k}), with partner $Q = 0.664$, on the direct cone to $0.4\%$ by
+construction of the data. Second, the most economical version is already
+excluded: a universal Dirac mass at the involution pivot, $m_D = G =
+\sqrt{3/2}\,\mu_\star$, would place colored partners at $M_{D_b} \simeq 1.27$\,GeV and $M_{D_s} \simeq 56$\,GeV (and $M_{D_b} = G^2/m_b = (3/2)\mu_\star^2/m_b = 1270.7$\,MeV is the charm mass to $0.2\%$, an identity verifiable from the definitions in this paper), long ruled out, since colored states at these masses would appear in hadron spectroscopy and in LEP-era and hadron-collider searches; the
+surviving version has a free common partner scale with the \emph{ratios} fixed.
+Rivero's RG crossing scale for Eq.~(\ref{eq:rivero}), $\sim 10$--$300$\,TeV~\cite{Rivero2026}, is a natural candidate for the \emph{lightest} partner mass $M_{D_b}$, since an RG crossing marks the threshold of the first new state, placing the remaining partners a factor $\alpha^{-3}/2 \simeq 44$ and $(2\alpha^5)^{-1} \simeq 870$ above it. The opposite identification (crossing scale as the \emph{heaviest} partner) would drag $M_{D_b}$ down to $10$--$350$\,GeV, excluded by vectorlike-quark searches; the threshold reading is therefore forced, and it places the spectrum beyond present collider reach. The implied Dirac mass, $m_D = \sqrt{m_b\,M_{D_b}} \simeq 0.2$--$1.2$\,TeV across the crossing window, is electroweak-adjacent, as a universal-seesaw Dirac mass generated by symmetry breaking naturally is, and the light--partner mixing angles $m_D/M_a \lesssim 10^{-2}$ are harmless to precision and flavour observables.
+Rivero's representation-theoretic suggestion, namely down-type states in family triplets and up-types requiring sextets~\cite{Rivero2024}, with duality scenarios (including Sannino-type~\cite{Sannino}) as a deeper origin, then addresses
+why the up sector admits no clean single inversion and satisfies neither cone.
+Writing the partner Lagrangian explicitly, and deriving $M_a \propto |Z_a|^2$
+from the cycle, remain open; an exact duality-forces-geometric-mean precedent
+exists in transport theory (Keller--Dykhne self-duality,
+$\sigma_{\rm eff}=\sqrt{\sigma_1\sigma_2}$~\cite{Keller,Dykhne}).
+
+\emph{(b) Hypercharge-graded phases (structure, not selector).}
+\.{Z}enczykowski observed that the measured phases are consistent with
+$\delta = \tfrac{1}{9}(1\pm|Y|)$, linear in weak hypercharge, with a lepton--quark
+sum rule $\delta_L+\delta_\nu = \delta_U+\delta_D$ and the corollary
+$\delta_\nu = 0$~\cite{Zen2012}. This grades the \emph{phase} by charge but does
+not select the \emph{coupling branch}; we record it as the established
+charge-structure connection in this literature. Its corollary bears on neutrinos:
+$\delta_\nu = 0$ implies a degenerate light pair unless a Majorana term intervenes (\.{Z}enczykowski's own caveat), which meshes with the observation that on
+the compact cycle, charge conjugation acts naturally as orientation reversal of
+the antiperiodic doublet, under which the three sample amplitudes map onto
+themselves (mass equality automatic) while winding-tied charges flip; a
+chargeless, orientation-neutral state is its own conjugate. We flag this as a
+speculative but testable lean toward Majorana neutrinos and defer it.
+
+\emph{(c) Wavefunction localization (excluded as posed).} Split-fermion
+constructions~\cite{ArkaniSchmaltz,MirabelliSchmaltz} produce Yukawas as overlap
+integrals of localized profiles; separations give \emph{exponential} suppression,
+and localization at a node of a profile suppresses the coupling rather than
+inverting it. No derivation of a reciprocal or inverse-square Yukawa law from
+profile amplitudes exists, and we do not use this route.
+
+Two problems therefore remain open, and we state them as the deliverable for model
+building: (A) derive the branch label of Eq.~(\ref{eq:branches}), equivalently in which coordinate each sector's self-duality lives, from
+representation content or duality; (B) derive the down-sector phase. Neither is
+attempted here.
+
+\section{The coincidence budget}
+\label{sec:budget}
+
+A reader asking where numerology ends and structure begins is asking a
+quantitative question, and this section treats it as one. No physically
+motivated null distribution over fermion masses exists: the Standard Model
+treats Yukawa couplings as free parameters and offers no prior over their
+values. The alternative to running a Monte Carlo under a stated but
+unphysical null is to run no Monte Carlo at all, which would leave the
+rarity question entirely unquantified. We choose to quantify it under
+explicit constructions, report the result as a model-conditional frequency
+rather than a verdict, and invite scrutiny of the prior choices, which are
+the dominant systematic. Three null families are tested; their outputs
+bracket the answer rather than pinning it. The null: lepton
+triples log-uniform on $[0.3\,\mathrm{MeV}, 2\,\mathrm{GeV}]$ and down-type
+triples log-uniform on $[2\,\mathrm{MeV}, 10\,\mathrm{GeV}]$. Each null
+universe receives the exact circulant fit of Eq.~(\ref{eq:circulant}) in both coordinates for both sectors and, so that no advantage accrues to the data, is granted the post-hoc coordinate choice: its $k$ is whichever of the
+direct or inverse fit lies closer to $1$. The score is
+$J = |k_\ell - 1| + |k_d - 1|$; the observed universe has
+$J_{\rm obs} = 3.3\times10^{-6} + 1.05\times10^{-3} = 1.05\times10^{-3}$ (lepton pole masses at their PDG values; the lepton term is sensitive to the $m_\tau$ vintage at its own magnitude, the total negligibly so). In two independent implementations with pinned seeds, $120$ of $2\times10^7$ and $69$ of $10^7$ null universes score $J \le J_{\rm obs}$: a conditional frequency
+\begin{equation}
+f = 6.3\times10^{-6}
+\qquad (\text{Clopper--Pearson } 95\%\ [5.4, 7.3]\times10^{-6},\ \text{pooled}),
+\end{equation}
+stable under widening both mass windows to $[0.1\,\mathrm{MeV}, 5\,\mathrm{GeV}]\times[1\,\mathrm{MeV}, 20\,\mathrm{GeV}]$ ($7.5\times10^{-6}$). The lepton hit
+dominates the rarity ($|k_\ell-1|<10^{-5}$ occurs in $\sim10^{-5}$ of nulls
+alone); a lone $|k-1|<10^{-3}$ appears in $\sim10^{-3}$ of nulls, so no single
+sector's self-duality would have carried this weight: the joint structure is what is rare. Three caveats are stated plainly. (i) The test is post hoc in its design: this specific null was posed after Table~\ref{tab:k} was known, and no multiplicity price is paid for having chosen these two sectors; the honest price, the coordinate choice, is paid and is small. The inputs themselves carry one cycle of out-of-sample exposure: the down-sector masses were frozen in the companion's archived protocol before the most recent PDG update and are used here unchanged. (ii) The null is log-uniform (the scale-invariant choice for quantities spanning several decades) within the stated ranges; other measures give other numbers, and among those examined this is the most favorable to the null: a broad log-normal yields $5.8\times10^{-6}$ and uniform-in-mass yields zero hits in $10^7$ ($f < 3.0\times10^{-7}$, $95\%$ upper limit), so the quoted value is the conservative one. (iii) Nothing here prices the choice of the self-dual grammar itself;
+that is the mechanism question of Secs.~\ref{sec:transfer} and \ref{sec:open},
+not a statistical one. These are model-conditional frequencies under a stated
+null, not $p$-values, and we do not convert them into significance claims. The
+generating scripts of both implementations are archived with the manuscript
+materials.
+
+\section{Tests}
+\label{sec:tests}
+
+(1) \emph{The down-sector ratio.} $m_s/m_d = 19.71$ from Eq.~(\ref{eq:ratio}) with $m_b$ input; decided by forthcoming lattice ratio precision. The construction has no buffer here: it stands or falls on this single dimensionless number. (2) \emph{The self-dual condition itself}: $k^{\rm inv}_{dsb} = 1$ sharpens with every FLAG cycle; a drift to $|k-1| > 3\sigma$ falsifies the branch assignment, and the same data decide the tetrahedral phase question of Sec.~\ref{sec:diagnosis}. (3) \emph{Up sector}: any representation-theoretic prediction
+of the up-triple constant confronts $0.845$/$0.917$. (4) \emph{Partner triple}:
+the seesaw realization predicts three vectorlike down-partners with mass ratios
+$1:\alpha^2:2\alpha^5$ (the $b$-partner lightest) and the triple locked on the direct cone; the overall scale is free, with the RG crossing region of
+Eq.~(\ref{eq:rivero}) ($\sim10$--$300$\,TeV, input-sensitive~\cite{Rivero2026})
+the natural candidate. The crossing scale is thereby promoted from diagnostic to interpretable, though its numerical value remains unstable to running inputs and is not used as a falsifier. (5) \emph{An internal discrimination.} The companion Soddy construction~\cite{APPB} identifies $m_s(\mu_\star)$ with the closed form $\alpha^2\mu_\star = 95.12$\,MeV, equivalent to $93.5$\,MeV at $2$\,GeV, which differs from the exact-self-duality value $92.7$\,MeV by $0.9\%$. Present data cannot separate the two, and the latest vintage moved them oppositely: the PDG 2026 shift takes the exact-self-duality residual from $-1.0\sigma$ to $-0.3\sigma$ (experimental error only) and the companion form from $+0.1\sigma$ to $+0.9\sigma$, both still sub-$\sigma$. The near-term test is asymmetric: lattice $m_s$ at $\pm0.3$\,MeV tests the companion form sharply, since its prediction carries no quark input, while the exact-self-duality value inherits $\pm1.6$\,MeV from $m_d$ and is tested at matching sharpness only through the ratio of Eq.~(\ref{eq:ratio}). In ratio form the two claims sit at $19.71$ and $1/\alpha^2 = 19.80$, separable only below $\pm0.05$; one construction may fall to the lattice years before the other. The two constructions are rival exact claims, both the author's, and the losing one will be recorded as such.
+
+\section{Summary}
+
+Shulga's compact-cycle mechanism for the charged leptons and Rivero's inverse
+down-quark relation are two coupling branches of one construction: the identical
+sum rules, applied to $Z$ or to $M^2/Z$, produce both published relations with no
+adjustable parameter. The exact circulant fit shows that the self-dual condition
+$k=1$ holds in precisely one coordinate per sector (direct for leptons, inverse
+for down quarks, neither for up quarks), so the branch structure is not imposed
+on the data but read from it. One postulate (the branch label), one concrete
+realization (a universal seesaw with waveform-carried partner masses, predicting a partner triple locked on the direct cone with ratios $1{:}\alpha^2{:}2\alpha^5$ and already
+excluding its own most economical version), two open problems (the origin of the
+partner spectrum; the phase), one exclusion (overlap localization), and one
+dated, decidable prediction (the ratio $m_s/m_d$), together with one coincidence-budget analysis (Sec.~\ref{sec:budget}), constitute the paper's entire content. The
+construction adds no parameters to remove one coordinate ambiguity from the
+flavour problem; whether that ambiguity has a dynamical origin is now a
+well-posed question.
+
+\section*{Acknowledgments}
+The author thanks K.~Shulga for the compact-cycle construction on which this paper
+builds, A.~Rivero for the inverse sum rule and extensive correspondence, and P.~\.{Z}enczykowski, whose published direct-coordinate
+parameters provided the cross-check reproduced in Table~\ref{tab:k}.
+\emph{AI usage disclosure:} AI tools (including Anthropic Claude and Moonshot AI Kimi models) were used for literature search, numerical verification, statistical cross-checks, and drafting assistance; all claims, derivations, and the decision of what to assert originate with and are the responsibility of the author.
+
+
+\begin{thebibliography}{99}
+\bibitem{Koide1982} Y.~Koide, Lett.\ Nuovo Cim.\ \textbf{34}, 201 (1982).
+\bibitem{Koide1983} Y.~Koide, Phys.\ Rev.\ D \textbf{28}, 252 (1983).
+\bibitem{PDG} S.~Navas \emph{et al.} (Particle Data Group), Phys.\ Rev.\ D \textbf{110}, 030001 (2024).
+\bibitem{Shulga2026} K.~Shulga, arXiv:2605.10245.
+\bibitem{Rivero2026} A.~Rivero, Phys.\ Lett.\ B \textbf{887}, 140510 (2026), arXiv:2606.10060.
+\bibitem{APPB} A.~M.~Brilliant, Acta Phys.\ Pol.\ B (2026), submitted; Zenodo pre-registration doi:10.5281/zenodo.19674345.
+\bibitem{MPLA} A.~M.~Brilliant, Mod.\ Phys.\ Lett.\ A (2026), submitted.
+\bibitem{Brannen} C.~Brannen, as cited in A.~Rivero and A.~Gsponer, hep-ph/0505220.
+\bibitem{Zen2012} P.~\.{Z}enczykowski, Phys.\ Rev.\ D \textbf{86}, 117303 (2012), arXiv:1210.4125.
+\bibitem{Zen2013} P.~\.{Z}enczykowski, Phys.\ Rev.\ D \textbf{87}, 077302 (2013), arXiv:1301.4143.
+\bibitem{Kartavtsev} A.~Kartavtsev, arXiv:1111.0480.
+\bibitem{LiMa} N.~Li and B.-Q.~Ma, Phys.\ Rev.\ D \textbf{73}, 013009 (2006), arXiv:hep-ph/0601031.
+\bibitem{Foot} R.~Foot, arXiv:hep-ph/9402242.
+\bibitem{GST} R.~Gatto, G.~Sartori, and M.~Tonin, Phys.\ Lett.\ B \textbf{28}, 128 (1968), doi:10.1016/0370-2693(68)90150-0.
+\bibitem{Rivero2024} A.~Rivero, Eur.\ Phys.\ J.\ C \textbf{84}, 1058 (2024), arXiv:2407.05397.
+\bibitem{Sannino} G.~Cacciapaglia and F.~Sannino, arXiv:2407.17281.
+\bibitem{ArkaniSchmaltz} N.~Arkani-Hamed and M.~Schmaltz, Phys.\ Rev.\ D \textbf{61}, 033005 (2000), arXiv:hep-ph/9903417.
+\bibitem{MirabelliSchmaltz} E.~A.~Mirabelli and M.~Schmaltz, Phys.\ Rev.\ D \textbf{61}, 113011 (2000), arXiv:hep-ph/9912265.
+\bibitem{FLAG} Y.~Aoki \emph{et al.} (FLAG), Phys.\ Rev.\ D \textbf{113}, 014508 (2026), arXiv:2411.04268.
+\bibitem{Berezhiani} Z.~G.~Berezhiani, Phys.\ Lett.\ B \textbf{129}, 99 (1983), doi:10.1016/0370-2693(83)90737-2.
+\bibitem{DavidsonWali} A.~Davidson and K.~C.~Wali, Phys.\ Rev.\ Lett.\ \textbf{59}, 393 (1987), doi:10.1103/PhysRevLett.59.393.
+\bibitem{DSW} A.~Davidson, T.~Schwartz, and K.~C.~Wali, J.\ Phys.\ G \textbf{24}, L55 (1998), arXiv:hep-ph/9510444.
+\bibitem{DSV} A.~Davidson, T.~Schwartz, and R.~R.~Volkas, J.\ Phys.\ G \textbf{25}, 1571 (1999), arXiv:hep-ph/9802235.
+\bibitem{Ng} D.~Ng, hep-ph/9204221.
+\bibitem{Keller} J.~B.~Keller, J.\ Math.\ Phys.\ \textbf{5}, 548 (1964), doi:10.1063/1.1704146.
+\bibitem{Dykhne} A.~M.~Dykhne, Sov.\ Phys.\ JETP \textbf{32}, 63 (1971).
+\bibitem{C3Z2} A.~M.~Brilliant, $C_3\times Z_2$ interference geometry and a light-fermion mass cascade, Preprints.org 2026, doi:10.20944/preprints202607.XXXX.
+\bibitem{CRunDec} F.~Herren and M.~Steinhauser, Comput.\ Phys.\ Commun.\ \textbf{224}, 333 (2018).
+\end{thebibliography}
+
+\end{document}

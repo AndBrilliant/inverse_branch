@@ -1,0 +1,8 @@
+{
+  "coincidence_budget": {
+    "J_obs": 1.0536e-3,
+    "engine_A": {"impl": "Kimi_K3", "seed": 20260723, "N": 20000000, "hits": 120},
+    "engine_B": {"impl": "independent", "seed": 20260726, "N": 10000000, "hits": 69},
+    "pooled": {"N": 30000000, "hits": 189, "f": 6.3e-6, "CP95": [5.4e-6, 7.3e-6]}
+  }
+}
